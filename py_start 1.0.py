@@ -13,9 +13,10 @@ def translate_webui(inp, rs, rs2):
         raise gr.Error("ERROR:翻译出错，不能输入空白内容，或者检查项目是否启动成功 :(", duration=8)
 
     try:
-        over = papi.translate(text=inp, source=rs, target=rs2, api_key='')
+        over = papi.translate(text=str(inp), source=rs, target=rs2, api_key='')
 
-    except:
+    except Exception as ee:
+        print(ee)
         try_info()
         pass
     finally:
