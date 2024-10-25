@@ -15,8 +15,10 @@ python3和其第三方库已经集成到整合包，模型包含在文件夹当�
 <br>
 
 ``目前只是拥有一个新的交互界面，实际是api调用，只有语言翻译，其他功能暂无，另外，次项目更多只是测试研究，模型效果可能不是好完美，如果你有更好的模型质量方案，请参阅LibreTranslate官方训练``
-
+![](https://i.postimg.cc/NjHjVYSB/image.png)
+![](https://i.postimg.cc/630300SZ/image.png)
 ![](https://i.postimg.cc/FsDbrrXz/image.png)
+
 
 ## ==一键启动服务==
 这里是一键启动，手动启动和相关配置请看==手动启动服务==
