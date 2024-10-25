@@ -5,7 +5,7 @@
 该项目对[LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)进行一个整合，暂无过多修改，目的是为了更加方便的部署和体验到该工具。
 python3和其第三方库已经集成到整合包，模型包含在文件夹当中，只需要按照以下说明使用即可。
 
-#### 模型列表：https://libretranslate.com/languages
+#### 模型支持的语言列表：https://libretranslate.com/languages
 <br>
 
 **这是一个本地，可离线的翻译工具，可以进行多国语言翻译，文档翻译。
