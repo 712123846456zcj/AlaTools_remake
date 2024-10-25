@@ -1,6 +1,4 @@
-# AlaTools_remake库
-
-# [LibreTranslate](file:LibreTranslate) 项目整合版
+# AlaTools_remake 开源库--- [LibreTranslate](file:LibreTranslate) 项目整合版
 # 支持多语言互译，API支持，文档翻译，批量翻译...
 
 ## ==项目说明==
