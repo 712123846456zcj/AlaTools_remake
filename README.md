@@ -1,5 +1,7 @@
 # AlaTools_remake 开源库--- [LibreTranslate](file:LibreTranslate) 项目整合版
-# 支持多语言互译，API支持，文档翻译，批量翻译...
+## 支持多语言互译，API支持，文档翻译，批量翻译...
+
+## 版本：1.1，更新内容：添加文档翻译功能
 
 ## ==项目说明==
 该项目对[LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)进行一个整合，暂无过多修改，目的是为了更加方便的部署和体验到该工具。
@@ -150,7 +152,8 @@ vc运行库合集（如果有）
 您的cpu至少含有AVX 和 AVX2这些指令集
 
 ## ==未来计划==
-添加文档翻译功能（暂未实现）
+接入谷歌，百度或者其他ai大模型的在线翻译（暂未实现）<br>
+接入主流ai大模型的图文交流（暂未实现）<br>
 添加NVIDIA GPU加速选项，提高推理速度（暂未实现）。
 
 #### 感谢名单：
