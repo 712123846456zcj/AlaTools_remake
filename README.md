@@ -57,8 +57,60 @@ ps：本项目仅供研究，只是1024节日一时兴起，另外，该项目�
 over：到这里你理应可以体验项目了
 
 ## ==手动启动服务==
+**需求：
+环境：python3.10.x
+第三方库：LibreTranslate**
 
+1.安装python：
+```
+安装python3.10.x
+```
+2.安装第三方库：
+```
+pip install -U LibreTranslate
+```
+3.运行&下载模型（在powershell或者cmd下）：
+```
+LibreTranslate
 
+提示：初次打开会下载所有，中国大陆的朋友记得翻墙，下载完后可以运行
+
+模型默认下载路径：C:\Users\你的用户名\.local
+```
+
+4.运行翻译器：
+```
+libretranslate --load-only zh,en
+
+（如果你已经下载了中英两个语言模型，程序将会正常运行，否则程序会自动下载或更新模型，如果报错请检查路径和网络环境）
+```
+
+！如果你想合并我的项目，实现整合以及自定义模型路径，并且使用我的调用程序<br>
+请按照以下步骤:
+1.找到python目录和默认模型目录，把他们移动到我的github项目下
+```
+C:\Users\你的用户名\.local
+复制或者剪切.local文件夹
+
+C:\Users\你的用户名\AppData\Local\Programs\Python
+复制或者剪切Python文件夹当中的python310文件夹
+
+例子：其中在Python目录下有一个Python310子目录，里面包含了python.exe等文件
+
+```
+2.合并
+```
+.local文件夹放入Python310\Scrtips下
+```
+3.修改启动脚本
+```
+依次修改
+1.每一次变更目录运行.cmd
+2.启动翻译-CPU-中英.cmd
+3.Translate_WebUI.cmd
+
+使用文本编辑器或者其他代码编辑器打开，修改其中的python3106为Python310，当然你可以自定义，无需指定python为文件夹名字，可以任意命名，但必须保持一致
+```
 
 ## ==模型放置==
 
