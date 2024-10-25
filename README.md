@@ -126,11 +126,11 @@ C:\Users\你的用户名\AppData\Local\Programs\Python
 ~~请将“.local”文件夹放入C:\Users\你的用户名\ 
 ps：目前暂未研究自定义模型路径，主要是占空间，硬盘占用约五六G，模型数量上大概有几十个互译的语言模型。~~
 
-ps：目前可以自定义模型路径了，如果你了解的话请参阅python\Lib\site-packages\argostranslate\settings.py
+ps：目前可以自定义模型路径了，如果你了解的话请参阅python\Lib\site-packages\argostranslate\settings.py <br>
 或者无需任何操作，按照本项目示例步骤也可以正常运行
 
 ## ==运行例子==
-libretranslate.exe 【启动默认服务，一般会下载和更新所有模型后启动，中国大陆的用户请翻墙使用】
+libretranslate.exe 【启动默认服务，一般会下载和更新所有模型后启动，中国大陆的用户请翻墙使用】<br>
 libretranslate.exe --load-only zh,en【只进行启动服务，并且指定中英互译（如果你已经下载了这两个模型或者全部模型），不会下载和更新其他模型】
 
 ## ==项目参考==：
@@ -147,14 +147,14 @@ https://github.com/jianchang512/ott
 如果所有操作部署完成却不能进行翻译，提示找不到模型，那么请检查项目路径是否包含中文和符号，建议英文和数字组合
 
 ## ==部署和运行环境==
-Win10 x64以及更高系统版本
-vc运行库合集（如果有）
-您的cpu至少含有AVX 和 AVX2这些指令集
+Win10 x64以及更高系统版本<br>
+vc运行库合集（如果有）<br>
+您的cpu至少含有AVX 和 AVX2这些指令集<br>
 
 ## ==未来计划==
 接入谷歌，百度或者其他ai大模型的在线翻译（暂未实现）<br>
 接入主流ai大模型的图文交流（暂未实现）<br>
-添加NVIDIA GPU加速选项，提高推理速度（暂未实现）。
+添加NVIDIA GPU加速选项，提高推理速度（暂未实现）
 
 #### 感谢名单：
 LLama3.1 8b（local）
