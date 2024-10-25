@@ -46,8 +46,11 @@ libretranslate.exe --load-only zh,en【只进行启动服务，并且指定中�
 
 ## ==项目参考==：
 https://github.com/LibreTranslate/LibreTranslate
+
 https://github.com/YiiGuxing/TranslationPlugin/discussions/5411
+
 https://github.com/argosopentech/argos-translate
+
 https://github.com/jianchang512/ott
 
 ## ==注意事项==
