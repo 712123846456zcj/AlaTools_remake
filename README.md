@@ -13,7 +13,7 @@ python3和其第三方库已经集成到整合包，模型包含在文件夹当�
 
 ``目前只是拥有一个新的交互界面，实际是api调用，只有语言翻译，其他功能暂无，另外，次项目更多只是测试研究，模型效果可能不是好完美，如果你有更好的模型质量，请参阅LibreTranslate官方``
 
-![hope](vx_images/179992919259491.jpg =359x)
+![hope](https://yt3.ggpht.com/4iP8AgfvrjRKdmzIaJ4WgcuOzM-gvOSitrLmw__0YICRJLikeuJ-cJzypuXY6zqbBqUMm4WfM_I=s88-c-k-c0x00ffffff-no-rj =359x)
 ---by Alabyesr阿岑
 
 ## ==启动服务==
