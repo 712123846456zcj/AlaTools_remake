@@ -76,7 +76,7 @@ with gr.Blocks(theme='soft') as app:
                              <span style="color: #008000;">翻译</span>
                              <span style="color: #0000ff;">工具</span>
                              <span style="color: #ffff00;">2024.10.24</span>
-                             <span style="color: #0000cd;">Beta 1.0</span>
+                             <span style="color: #0000cd;">Beta 1.1</span>
                            </span>
                          </p>
                        </div>
