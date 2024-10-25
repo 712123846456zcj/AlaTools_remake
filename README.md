@@ -1,6 +1,8 @@
 # AlaTools_remake 开源库--- [LibreTranslate](file:LibreTranslate) 项目整合版
 # 支持多语言互译，API支持，文档翻译，批量翻译...
 
+## 版本：1.0
+
 ## ==项目说明==
 该项目对[LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)进行一个整合，暂无过多修改，目的是为了更加方便的部署和体验到该工具。
 python3和其第三方库已经集成到整合包，模型包含在文件夹当中，只需要按照以下说明使用即可。
@@ -145,13 +147,14 @@ https://github.com/jianchang512/ott
 如果所有操作部署完成却不能进行翻译，提示找不到模型，那么请检查项目路径是否包含中文和符号，建议英文和数字组合
 
 ## ==部署和运行环境==
-Win10 x64以及更高系统版本
-vc运行库合集（如果有）
-您的cpu至少含有AVX 和 AVX2这些指令集
+Win10 x64以及更高系统版本<br>
+vc运行库合集（如果有）<br>
+您的cpu至少含有AVX 和 AVX2这些指令集<br>
 
 ## ==未来计划==
-添加文档翻译功能（暂未实现）
-添加NVIDIA GPU加速选项，提高推理速度（暂未实现）。
+添加文档翻译功能（暂未实现）<br>
+添加NVIDIA GPU加速选项，提高推理速度（暂未实现）<br>
+更多内容请看1.1-->https://github.com/712123846456zcj/AlaTools_remake/tree/1.1 版本
 
 #### 感谢名单：
 LLama3.1 8b（local）
