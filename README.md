@@ -81,7 +81,7 @@ vc运行库合集（如果有）
 添加上原本的文档翻译等功能
 添加NVIDIA GPU加速选项，提高推理速度。
 
-感谢名单：
+#### 感谢名单：
 LLama3.1 8b（local）
 Gemma2 2b（loca）
 coze-chatGPT-4o
