@@ -1,11 +1,12 @@
 import gradio as gr
 import postAPI as papi
+import requests
 
 languages_org = ['auto', 'zh', 'en', 'zt', 'fr', 'de', 'ja', 'ko', 'ru', 'es', 'th', 'it', 'pt', 'ar', 'tr', 'hi']
 languages_cover = ['zh', 'en', 'zt', 'fr', 'de', 'ja', 'ko', 'ru', 'es', 'th', 'it', 'pt', 'ar', 'tr', 'hi']
 
 
-def translate_webui(inp, rs, rs2):
+def translate_webui(inp, rs, rs2 ,in_file):
     # print(f'翻译前：{inp},选中翻译前语言:{rs},选中翻译后语言:{rs2}')
 
     def try_info():
@@ -27,7 +28,38 @@ def translate_webui(inp, rs, rs2):
         else:
 
             gr.Info('翻译成功 :)')
+            print(in_file)
             return over
+def translate_webui_files(inf,rs,rs2):
+    try:
+        url = "http://127.0.0.1:5000/translate_file"
+
+        files = {
+            "file": open("1.docx", "rb"),
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+
+        data = {
+            "file": inf,
+            "source": rs,
+            "target": rs2,
+
+        }
+        response = requests.post(url, files=files, data=data)
+        # print(response.status_code)
+
+        if response.status_code == 200:
+            response_data = response.json()
+            if rs == 'auto':
+                gr.Warning("文档翻译的输入不能选择auto ⛔️ :(", duration=5)
+            else:
+                return response_data['translatedFileUrl']
+
+        else:
+            gr.Warning("文档翻译的输入不能选择auto ⛔️ :(", duration=5)
+    except Exception as e:
+        print('el触发：',e)
+        return None
 
 
 with gr.Blocks(theme='soft') as app:
@@ -96,5 +128,9 @@ with gr.Blocks(theme='soft') as app:
     with gr.Row():
         inf = gr.File(label='翻译前文档', )
         outf = gr.File(label='翻译后文档', )
+
+    btn2 = gr.Button("文档翻译")
+
+    btn2.click(fn=translate_webui_files, inputs=[inf, rs, rs2], outputs=outf, )
 
     app.launch(inbrowser=True, )
